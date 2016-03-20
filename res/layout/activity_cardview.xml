@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.gaofeng.recyclerviewdemo.CardViewActivity"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+<!-- card_view:cardElevation 阴影的大小
+card_view:cardMaxElevation 阴影最大高度
+card_view:cardBackgroundColor 卡片的背景色
+card_view:cardCornerRadius 卡片的圆角大小
+card_view:contentPadding 卡片内容于边距的间隔 -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/white"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cat"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:text="This is a card view"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+ </android.support.v7.widget.CardView>
+
+
+    <SeekBar
+        android:layout_below="@+id/card_view"
+        android:id="@+id/seek1"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        />
+
+    <SeekBar
+        android:layout_below="@+id/seek1"
+        android:id="@+id/seek2"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        />
+</RelativeLayout>
