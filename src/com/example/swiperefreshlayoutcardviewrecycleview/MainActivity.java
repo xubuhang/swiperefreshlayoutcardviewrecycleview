@@ -19,9 +19,11 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         Button swiperefreshlayoutBtn=(Button) findViewById(R.id.swiperefreshlayoutBtn);
         Button cardviewBtn=(Button) findViewById(R.id.cardviewBtn);
         Button recycleviewBtn=(Button) findViewById(R.id.recycleviewBtn);
+        Button paletteBtn=(Button) findViewById(R.id.paletteBtn);
         swiperefreshlayoutBtn.setOnClickListener(this);
         cardviewBtn.setOnClickListener(this);
         recycleviewBtn.setOnClickListener(this);
+        paletteBtn.setOnClickListener(this);
     }
 	@Override
 	public void onClick(View v) {
@@ -39,7 +41,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 			Intent intent3 =new Intent(this, RecycleViewActivity.class);
 			startActivity(intent3);
 	break;
-
+		case R.id.paletteBtn:
+			Intent intent4 =new Intent(this, PaletteActivity.class);
+			startActivity(intent4);
+	break;
 		default:
 			break;
 		}

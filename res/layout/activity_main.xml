@@ -26,5 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="recycleview" />
+    <Button
+        android:id="@+id/paletteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="palette" />
 
 </LinearLayout>

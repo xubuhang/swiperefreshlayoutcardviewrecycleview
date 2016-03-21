@@ -31,6 +31,9 @@
         <activity
             android:name=".RecycleViewActivity"
             android:label="更高级的ListVew" ></activity>
+        <activity
+            android:name=".PaletteActivity"
+            android:label="识别图片主颜色" ></activity>
     </application>
 
 </manifest>
